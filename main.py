@@ -12,8 +12,9 @@ if bulgakov == str(1):
     print ("Ура, "+ username + ", ты умный человек!!!")
     time.sleep(1)
     print(username + " Любишь Мастера и Маргариту?")
-    mm = input()
-    if mm == "Да" or "да"or "ДА" or "дА" or "LF" or "lf" or "Lf" or "lF":
+    Master_and_Margaret = input()
+    Master_and_Margaret_list = ["Да","да","ДА","дА","LF","lf","Lf","lF"]  
+    if Master_and_Margaret in Master_and_Margaret_list:
         time.sleep(1)
         print("Красава!")
         time.sleep(1)
