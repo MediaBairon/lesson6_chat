@@ -9,17 +9,29 @@ print(f'Вы ввели {symb}')
 time.sleep(1)
 print("Ваша операция: " + str(num1)+ " "+ symb+ " "+ str(num2))
 time.sleep(1)
-if symb == "+":
+# функции вычисления
+def summ (num1, num2):
     res1 = num1 + num2
-    print("Ваш результат: "+ str(res1))
-elif symb == "-":
+    print(res1)
+def difference (num1, num2):
     res2 = num1 - num2
-    print("Ваш результат: "+ str(res2))
-elif symb == "*":
+    print(res2)
+def multiply (num1, num2):
     res3 = num1 * num2
-    print("Ваш результат: "+ str(res3))
-elif symb == "/":
+    print(res3)
+def divide (num1, num2):
     res4 = num1/num2
-    print("Ваш результат: "+ str(res4))
-else:
+    print(res4)
+def wrong_expression():
     print("Вы ввели неправильное значение")
+#Логика калькулятора
+if symb == "+":
+    summ (num1, num2)
+elif symb == "-":
+    difference (num1, num2)
+elif symb == "*":
+    multiply (num1, num2)
+elif symb == "/":
+    divide (num1, num2)
+else:
+     wrong_expression()
